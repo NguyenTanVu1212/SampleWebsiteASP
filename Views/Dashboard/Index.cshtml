@@ -1,0 +1,34 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+ 
+<ul class="nav nav-tabs">
+    <li class="active">
+        <a data-toggle="tab" href="#firstTab"> History Enter  </a>
+        <a> &nbsp </a>
+        <a> &nbsp </a>
+    </li>
+    <li class="active">
+        <a data-toggle="tab" href="#secondTab"> Manager Staff</a>
+        <a> &nbsp </a>
+        <a> &nbsp </a>
+    </li>
+</ul>
+<div class="tab-content">
+    <div id="firstTab" class="tab-pane fade in active">
+        <a>@Html.ActionLink("View All", "ViewAll")</a>
+        <a> &nbsp </a>
+        <a>@Html.ActionLink("Search History Enter", "Find")</a>
+        <a> &nbsp </a>
+        <a>@Html.ActionLink("Add new history enter", "AddOrEdit")</a>
+    </div>
+    
+    <div id="secondTab" class="tab-pane fade in active">
+        <a>@Html.ActionLink("View All", "ListStaff")</a>
+        <a> &nbsp </a>
+        <a>@Html.ActionLink("Search Staff Infomation", "SearchInfoStaff")</a>
+        <a> &nbsp </a>
+        <a>@Html.ActionLink("Add new staff", "AddNewStaff")</a>
+
+    </div>
+</div>
